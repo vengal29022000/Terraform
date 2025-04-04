@@ -8,6 +8,7 @@ resource "aws_instance" "vm-1" {
   }
   vpc_security_group_ids = [aws_security_group.vm-1-sg.id]
 }
+#if you print ouput of block it give as dictionary (key and value).In count we get in form of list
 resource "aws_security_group" "vm-1-sg" {
   name        = "Allow-all-terraform"
   description = "allows all protocols"
