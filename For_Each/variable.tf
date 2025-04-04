@@ -28,9 +28,16 @@ variable "instance_type" {
 
 
 variable "instances" {
+  type = map
   default = {
     frontend = "t3.micro"
     backend = "t3.micro"
     database = "t3.small"
   } 
+}
+variable "domain_name" {
+  default = "vengalareddy.site" 
+}
+variable "zone_id" {
+  default = "Z0657771OQQ6V4STFY4E"
 }
