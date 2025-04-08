@@ -5,11 +5,8 @@ terraform {
       version = "5.89.0"
     }
   }
-  backend "s3" {
-  bucket = "terraform-state-bucket-29"
-  key    = "basic-setup-infra-workspace"
-  region = "us-east-1"
-  dynamodb_table = "Terraform-locking"
+    backend "s3" {
+
   }
 }
 
