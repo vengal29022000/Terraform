@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket         = "terraform-state-bucket-29"
-    key            = "basic-setup-infra"
+    key            = "basic-setup-infra-1"
     region         = "us-east-1"
     dynamodb_table = "Terraform-locking"
   }
