@@ -45,7 +45,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v4
       with:
         role-to-assume: arn:aws:iam::854681582083:role/tf-iac
-        #aws-region: ap-south-1 
+        aws-region: us-east-1 
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
