@@ -41,6 +41,12 @@ jobs:
     - name: Terraform Format
       run: terraform fmt -check
 
+    - name: Configure AWS credentials (OIDC)
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: arn:aws:iam::vengal29022000:role/GitHubActionsTerraformRole
+        aws-region: ap-south-1
+
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan -input=false
