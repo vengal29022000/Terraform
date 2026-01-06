@@ -45,4 +45,5 @@ jobs:
     - name: Terraform Plan
       run: terraform plan -input=false
       working-directory: EC2
+      
 
