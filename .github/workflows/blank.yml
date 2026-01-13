@@ -55,6 +55,7 @@ jobs:
     - name: Terraform Plan
       run: terraform plan -input=false
       working-directory: EC2
+      
 
     # Generates an execution apply for Terraform
     - name: Terraform Apply
